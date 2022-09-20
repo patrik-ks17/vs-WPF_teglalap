@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPF_teglalap.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_teglalap"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Height="440" VerticalAlignment="Top">
+        <TextBox HorizontalAlignment="Center" Margin="0,43,0,0" TextWrapping="Wrap" Text="A téglalap" VerticalAlignment="Top" Width="129" FontWeight="Bold" FontSize="24"/>
+        <TextBox HorizontalAlignment="Left" Margin="63,97,0,0" TextWrapping="Wrap" Text="Kiindulási adatok:" VerticalAlignment="Top" Width="150" FontWeight="Bold" FontSize="16"/>
+        <Label Content="'a' oldal hossza:&#xD;&#xA;" HorizontalAlignment="Left" Margin="166,144,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label Content="'b' oldal hossza:&#xA;" HorizontalAlignment="Left" Margin="166,197,0,0" VerticalAlignment="Top" Height="28"/>
+        <Button Content="Számol" Margin="379,264,358,152" Click="Button_Click"/>
+        <TextBox x:Name="num_a_oldal" HorizontalAlignment="Left" Margin="382,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="NumberValidationTextBox" TextChanged="num_a_oldal_TextChanged"/>
+        <TextBox x:Name="num_b_oldal" HorizontalAlignment="Left" Margin="382,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" PreviewTextInput="NumberValidationTextBox"/>
+        <Label Content="Kerület:" HorizontalAlignment="Left" Margin="166,332,0,0" VerticalAlignment="Top" Height="28"/>
+        <Label Content="Terület:" HorizontalAlignment="Left" Margin="166,384,0,0" VerticalAlignment="Top" Height="28"/>
+        <TextBox x:Name="num_k" HorizontalAlignment="Left" Margin="382,337,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="num_t" HorizontalAlignment="Left" Margin="382,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
